@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,5 +9,42 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
+    android:background="@color/background_color_layout"
     tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/ask_button"
+        android:text="@string/ask_button_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/button_color_blue"
+        android:textColor="@color/text_color_white" />
+
+    <TextView
+        android:id="@+id/decisions_text"
+        android:text="@string/text_view_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/image_eightBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ask_button"
+        android:layout_below="@+id/decisions_text"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/ball1" />
+
+
 </RelativeLayout>
